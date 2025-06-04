@@ -1,0 +1,16 @@
+sudo groupadd devs
+sudo groupadd security
+sudo useradd -m -s /bin/bash -g users admin
+sudo useradd -m -s /bin/bash analyst
+sudo useradd -m -s /bin/bash developer
+sudo passwd admin
+sudo passwd analyst
+sudo passwd developer
+sudo usermod -aG security analyst
+sudo usermod -aG devs developer
+sudo mkdir -p /data/dev
+sudo mkdir -p /data/sec
+sudo chown :devs /data/dev
+sudo chown :security /data/sec
+sudo chmod 770 /data/dev
+sudo chmod 770 /data/sec
