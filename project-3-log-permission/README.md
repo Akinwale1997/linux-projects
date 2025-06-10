@@ -24,12 +24,9 @@ All terminal commands used in this project are documented in the commands-used.t
 
 ## 🖼️ Visual Proof (Screenshots)
 
-You’ll find screenshots of each step inside the screenshots/ folder:
-
-- ✅ project-3-step1-user-creation.png
-- ✅ project-3-step2-sudo-verification.png
-- ✅ project-3-step3-permission-verification.png
-
+![Step 1 - User Creation](screenshots/project-3-step1-user-creation.png)
+![Step 2 - Sudo Verification](screenshots/project-3-step2-sudo-verification.png)
+![Step 3 - Permission Verification](screenshots/project-3-step3-permission-verification.png)
 These screenshots show successful user creation, sudo verification, and permission assignment for the audit logs folder.
 
 ---
