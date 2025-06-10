@@ -1,1 +1,16 @@
+# Step 1: Create a user
+sudo adduser audituser
 
+# Step 2: Add user to sudo group
+sudo usermod -aG sudo audituser
+
+# Step 3: Switch to audituser
+su - audituser
+
+# Step 4: Verify sudo privileges
+sudo whoami
+
+# Step 5: Create secure log directory
+sudo mkdir -p /var/log/audituser-logs
+sudo chown audituser:audituser /var/log/audituser-logs
+sudo chmod 700 /var/log/audituser-logs
